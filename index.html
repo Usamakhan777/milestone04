@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume</h1>
+
+        <!-- Editable Resume Section -->
+        <div class="resume">
+            <h2 contenteditable="true" id="name">Muhammad Usama</h2>
+            <p contenteditable="true" id="job-title">Full Stack Developer</p>
+
+            <h3>Contact Information</h3>
+            <p contenteditable="true" id="email">uasamkhan574@gmail.com</p>
+            <p contenteditable="true" id="phone">+923172886259</p>
+
+            <h3>Skills</h3>
+            <ul>
+                <li contenteditable="true">JavaScript</li>
+                <li contenteditable="true">React</li>
+                <li contenteditable="true">Node.js</li>
+            </ul>
+
+            <h3>Experience</h3>
+            <div class="job" contenteditable="true">
+                <h4>Web Developer - ABC Company</h4>
+                <p>Jan 2023 - Present</p>
+                <ul>
+                    <li>Developed web applications using JavaScript and React.</li>
+                    <li>Collaborated with cross-functional teams to deliver high-quality solutions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="saveResume">Save Changes</button>
+            <button id="downloadResume">Download as PDF</button>
+            <button id="resetResume">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Add your JavaScript file -->
+</body>
+</html>
